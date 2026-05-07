@@ -39,3 +39,9 @@ logging:
   level:
     root: INFO
     com.bookmyshow: DEBUG
+
+security:
+  jwt:
+    # Base64-encoded key (for learning only; move to env var in production).
+    secret: ${JWT_SECRET:Ym9va215c2hvdy1zZWNyZXQta2V5LWJvb2tteXNob3ctc2VjcmV0LWtleQ==}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000}

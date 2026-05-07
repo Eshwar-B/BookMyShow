@@ -6,15 +6,7 @@ Step-by-step implementation of a BookMyShow-like system using clean layering and
 
 - Project baseline and dependencies configured for Java 17 + Spring Boot monolith.
 - Required backend package structure created:
-  - `controller`
-  - `service`
-  - `repository`
-  - `entity`
-  - `dto`
-  - `config`
-  - `security`
-  - `kafka`
-  - `exception`
+  - `controller`, `service`, `repository`, `entity`, `dto`, `config`, `security`, `kafka`, `exception`
 - Database schema design added with Flyway migration:
   - `users`, `movies`, `theatres`, `screens`, `shows`, `seats`
   - `show_seat_inventory` (seat_id + show_id + status + version)
@@ -43,4 +35,3 @@ Step-by-step implementation of a BookMyShow-like system using clean layering and
 - Service classes: `src/main/java/com/bookmyshow/service` with names like `userService.java`.
 - Repository classes: `src/main/java/com/bookmyshow/repository` with names like `userRepository.java`.
 - Entity classes: `src/main/java/com/bookmyshow/entity` with names like `userEntity.java`.
-- Same layer classes stay together in their package.
